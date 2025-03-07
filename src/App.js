@@ -39,6 +39,7 @@ const App = () => {
             "Express.js",
             "Python",
             "C++",
+            "SQL",
           ].map((skill) => (
             <span key={skill} className="skill">
               {skill}
@@ -64,6 +65,15 @@ const App = () => {
             <div key={project.title} className="project-card">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="project-button">View Project</button>
+                </a>
+              )}
             </div>
           ))}
         </div>

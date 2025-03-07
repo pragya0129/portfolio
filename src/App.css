@@ -143,3 +143,18 @@ body {
 .project-card h3 {
   color: #3498db;
 }
+
+.project-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-button:hover {
+  background-color: #0056b3;
+}
